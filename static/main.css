@@ -27,7 +27,6 @@ h2 {
     box-lines: border-box;
     font-size: 14px;
     color: #ffffff;
-    background-color: rgb(32, 33, 36);
 
 }
 body {
@@ -70,14 +69,15 @@ input:focus {
     left: 15px;
 }
 p {
-    color:#ffffff;
+    color: #333333;
     padding-left: 13px;
 }
 
 button{
     border: 1px solid transparent;
+    color: #333333;
     padding: 8px 12px;
-    background-color:rgb(48, 49, 52);
+    /* background-color:rgb(48, 49, 52); */
     border-radius: 5px;
     width: 250px;
     margin: auto;
@@ -99,4 +99,17 @@ button:hover {
     margin-left: 100px;
     margin-right: 100px;
     gap: 2px;
+}
+.blue{
+    color: #4285f4;
+}
+.red{
+    color: #db4437;
+}
+
+.yellow {
+    color: #f4b400;
+}
+.green {
+    color: #0f9D58;
 }

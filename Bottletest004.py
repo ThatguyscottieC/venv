@@ -14,9 +14,7 @@ json = 'index-0416.json'
 indexLoad = 0
 
 # Bottletest004 = Flask(__name__)
-# openai.api_key = os.getenv("OPENAI_API_KEY")
-
-os.environ["OPENAI_API_KEY"] = "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"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 # @get('/')
