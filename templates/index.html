@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <title>JimGPT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GPT Search</title>
+</head>
+
+<body>
+    <div class="search-wrap">
+        <h1>
+            <a style="color:blue">J</a><a style="color:red">i</a><a style="color:yellow">m</a>
+            <a style="color:blue">R</a><a style="color:green">u</a><a style="color:red">t</a><a style="color:blue">t</a>
+            <a style="color:red">S</a><a style="color:yellow">h</a><a style="color:blue">o</a><a
+                style="color:green">w</a>
+            <a style="color:red">C</a><a style="color:blue">h</a><a style="color:red">a</a><a
+                style="color:yellow">t</a><a style="color:blue">b</a><a style="color:green">o</a><a
+                style="color:red">t</a>
+            Jim Rutt Show Chatbot
+        </h1>
+        <h2>Warning the search may take several seconds...</h2>
+        <form method="POST" action="/">
+            <input type="text" name="prompt">
+            <button type="submit" id="seatch-btn">Search</button>
+        </form>
+    </div>
+    {% if response %}
+    <div class="response">
+        <br>
+        <p>Prompt: {{ myQuery }}</p>
+        <br>
+        <p>Response: {{ response }}</p>
+        {% endif %}
+    </div>
+
+</html>
+
+
+<!-- <body>
+    <h1>JimGPT</h1>
+    <form action="/" method="post">
+        <input type="text" name="prompt" placeholder="Enter an topic" required />
+    </form>
+    {% if results %}
+    <p> Prompt {{prompt}}</p>
+    <p>
+    <div>
+        <p class="results">{{ results }}</p>
+    </div>
+
+    {% endif %}
+
+</body> -->
