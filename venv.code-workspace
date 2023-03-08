@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../jimflask/jimgpt/venv/lib/python3.10/site-packages"
+		}
+	],
+	"settings": {}
+}
